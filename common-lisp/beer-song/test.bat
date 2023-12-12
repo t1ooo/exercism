@@ -1,0 +1,1 @@
+sbcl --load beer-song-test.lisp --quit

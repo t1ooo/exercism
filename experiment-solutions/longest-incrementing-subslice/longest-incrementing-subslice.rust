@@ -1,0 +1,16 @@
+pub fn longest_incrementing_subslice(s: &[u8]) -> &[u8] {
+	let mut prev: u8 = 0;
+	let mut begin = 0;
+	let mut incr_subslices: Vec<&[u8]> = vec![];
+	
+	for (i, v) in s.iter().enumerate() {
+    if prev != (if *v == 0 { 0 } else { *v - 1 }) {
+      incr_subslices.push(&s[begin..i]);
+      begin = i;
+    }
+  	prev = *v;
+  }
+  incr_subslices.push(&s[begin..s.len()]);
+  
+  incr_subslices.iter().max_by_key(|x| x.len()).unwrap()
+}

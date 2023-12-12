@@ -1,0 +1,1 @@
+bash "F:\Program Files\git\usr\local\libexec\bats" two_fer_test.sh

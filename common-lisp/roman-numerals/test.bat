@@ -1,0 +1,1 @@
+sbcl --load roman-numerals-test.lisp --quit

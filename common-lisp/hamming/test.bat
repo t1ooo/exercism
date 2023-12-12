@@ -1,0 +1,1 @@
+sbcl --load hamming-test.lisp --quit

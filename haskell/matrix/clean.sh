@@ -1,0 +1,2 @@
+clear
+stack clean --full

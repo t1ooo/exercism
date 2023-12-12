@@ -1,0 +1,1 @@
+sbcl --load word-count-test.lisp --quit

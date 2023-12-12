@@ -1,0 +1,39 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.33.0.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: a4dca2e6f95d326cb75a85254682a2f0327799a8ac18d6cb8e1f3fb4e458ebbb
+
+name:           lens-person
+version:        0.1.0.3
+build-type:     Simple
+
+library
+  exposed-modules:
+      Person
+  other-modules:
+      Paths_lens_person
+  hs-source-dirs:
+      src
+  ghc-options: -Wall
+  build-depends:
+      base
+    , lens
+    , time
+  default-language: Haskell2010
+
+test-suite test
+  type: exitcode-stdio-1.0
+  main-is: Tests.hs
+  other-modules:
+      Paths_lens_person
+  hs-source-dirs:
+      test
+  build-depends:
+      base
+    , hspec
+    , lens-person
+    , time
+  default-language: Haskell2010

@@ -1,0 +1,1 @@
+swipl -f sum_of_multiples.pl -s sum_of_multiples_tests.plt -g run_tests,halt -t 'halt(1)'

@@ -1,0 +1,1 @@
+sbcl --load anagram-test.lisp --quit

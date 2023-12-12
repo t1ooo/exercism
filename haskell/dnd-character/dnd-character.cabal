@@ -1,0 +1,38 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.33.0.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: e88277cf7025bfe141f2f56e1714e73082c2bbf90b455b84548315062d251aaa
+
+name:           dnd-character
+version:        1.1.0.1
+build-type:     Simple
+
+library
+  exposed-modules:
+      DND
+  other-modules:
+      Paths_dnd_character
+  hs-source-dirs:
+      src
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-uni-patterns -Wincomplete-record-updates -Wredundant-constraints -Wmissing-export-lists -Wpartial-fields -Wmissing-deriving-strategies -Wunused-packages
+  build-depends:
+      QuickCheck
+    , base
+  default-language: Haskell2010
+
+test-suite test
+  type: exitcode-stdio-1.0
+  main-is: Tests.hs
+  other-modules:
+      Paths_dnd_character
+  hs-source-dirs:
+      test
+  build-depends:
+      QuickCheck
+    , base
+    , dnd-character
+    , hspec
+  default-language: Haskell2010

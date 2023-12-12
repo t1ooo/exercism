@@ -1,0 +1,2 @@
+clear
+julia runtests.jl

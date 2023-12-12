@@ -1,0 +1,1 @@
+sbcl --load luhn-test.lisp --quit

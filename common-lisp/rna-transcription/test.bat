@@ -1,0 +1,1 @@
+sbcl --load rna-transcription-test.lisp --quit

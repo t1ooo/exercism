@@ -1,0 +1,1 @@
+bash "F:\Program Files\git\usr\local\libexec\bats" hello_world_test.sh
